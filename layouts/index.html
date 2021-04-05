@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+<div class="row" id="namebanner">
+    <div class="twelve columns">
+        <img src="{{ $.Site.Params.logo | relURL}}" class="u-max-full-width" alt="{{ .Title }}"/>
+        <h3 id="slogan">{{ $.Site.Params.slogan }}</h3>
+        <!--<p></p>-->
+    </div>
+</div>
+
+{{ .Content }}
+
+{{ end }}
