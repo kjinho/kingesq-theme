@@ -3,7 +3,7 @@
         <ul class="navbar-list">
             {{ range .Site.Menus.main }}
             <li class="navbar-item">
-                <a class="navbar-link" href="{{ .URL }}">
+                <a class="navbar-link" href="{{ .URL | relURL }}">
                     {{ $text := print .Name | safeHTML }}
                     {{ $text }}
                 </a>
